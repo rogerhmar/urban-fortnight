@@ -2,15 +2,20 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>test</RootNamespace>
     </PropertyGroup>
-
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="Azure.AI.OpenAI" Version="2.1.0" />
+      <PackageReference Include="Azure.AI.OpenAI" Version="2.2.0-beta.4" />
       <PackageReference Include="Azure.Identity" Version="1.13.2" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
     </ItemGroup>
 
 </Project>
